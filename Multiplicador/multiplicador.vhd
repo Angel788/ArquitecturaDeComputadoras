@@ -8,15 +8,15 @@ entity multiplicador is
 	port (
 		a: in std_logic_vector(0 TO 3);
 		b: in std_logic_vector(0 TO 2);
-		s:inout std_logic_vector(0 to 7)
+		s:inout std_logic_vector(0 to 6)
 	);
 end multiplicador;
 	
 architecture multiplicacion of multiplicador is
 	signal cin, cout: std_logic_vector(0 TO 7);
 	signal d: std_logic_vector(0 TO 11);
-	signal d1,d2,d3:std_logic_vector(0 TO 7);
-	signal sums:std_logic_vector(0 to 7);
+	signal d1,d2,d3:std_logic_vector(0 TO 6);
+	signal sums:std_logic_vector(0 to 6);
 	begin 
 	      d1(0) <= a(0) and b(0);
 			d1(1) <= a(1) and b(0);

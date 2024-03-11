@@ -6,15 +6,15 @@ use work.all;
 
 entity sumadorV is 
 	port (
-		a: in std_logic_vector(0 TO 7);
-		b: in std_logic_vector(0 TO 7);
-		s:inout std_logic_vector(0 to 7)
+		a: in std_logic_vector(0 TO 6);
+		b: in std_logic_vector(0 TO 6);
+		s:inout std_logic_vector(0 to 6)
 	);
 end sumadorV;
 
 architecture sum of sumadorV is
-    signal cin, cout: std_logic_vector(0 TO 7);
-	 signal sums: std_logic_vector(0 TO 7);
+    signal cin, cout: std_logic_vector(0 TO 6);
+	 signal sums: std_logic_vector(0 TO 6);
 begin
 	suma1: sumador port map (
 			a => a(0),

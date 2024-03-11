@@ -5,7 +5,7 @@ use work.all;
 
 entity ComparadorVector is 
 	port (
-		numero1,numero2: in std_logic_vector(0 to 5);
+		numero1,numero2: in std_logic_vector(0 to 4);
 		cmp1,cmp2: out std_logic
 	);
 end ComparadorVector;

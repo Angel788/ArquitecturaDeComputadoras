@@ -6,9 +6,9 @@ use work.all;
 
 entity RestadorV is 
 	port (
-		a: in std_logic_vector(0 TO 4);
-		b: in std_logic_vector(0 TO 4);
-		s:inout std_logic_vector(0 to 5)
+		a: in std_logic_vector(0 TO 3);
+		b: in std_logic_vector(0 TO 3);
+		s:inout std_logic_vector(0 to 4)
 	);
 end RestadorV;
 

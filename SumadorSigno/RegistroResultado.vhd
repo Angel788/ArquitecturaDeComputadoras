@@ -5,10 +5,10 @@ use work.all;
 
 entity RegistroResultado is 
 	port (
-		data: in std_logic_vector(0 to 6);
+		data: in std_logic_vector(0 to 5);
 		clock: in std_logic;
-		readdata:inout std_logic_vector(0 to 6);
-		readdatan:inout std_logic_vector(0 to 6)
+		readdata:inout std_logic_vector(0 to 5);
+		readdatan:inout std_logic_vector(0 to 5)
 	);
 end RegistroResultado;
 
@@ -49,11 +49,5 @@ begin
 		  clk => clock,
 		  q => readdata(5),
 		  qnot =>readdatan(5)
-	  );
-	  flipflop7:FliflopD port map(
-	     data => data(6),
-		  clk => clock,
-		  q => readdata(6),
-		  qnot =>readdatan(6)
 	  );
 end registro;

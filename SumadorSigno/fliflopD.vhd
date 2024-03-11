@@ -7,8 +7,8 @@ entity FliflopD is
 	port (
 		data: in std_logic;
 		clk: in std_logic;
-		q:inout std_logic;
-		qnot:inout std_logic
+		q:out std_logic;
+		qnot:out std_logic
 	);
 end FliflopD;
 

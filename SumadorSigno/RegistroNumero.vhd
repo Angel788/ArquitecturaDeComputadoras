@@ -5,10 +5,10 @@ use work.all;
 
 entity RegistroNumero is 
 	port (
-		data: in std_logic_vector(0 to 5);
+		data: in std_logic_vector(0 to 4);
 		clk: in std_logic;
-		readdata:inout std_logic_vector(0 to 5);
-		readdatan:inout std_logic_vector(0 to 5)
+		readdata:inout std_logic_vector(0 to 4);
+		readdatan:inout std_logic_vector(0 to 4)
 	);
 end RegistroNumero;
 
@@ -44,11 +44,4 @@ begin
 		  q => readdata(4),
 		  qnot =>readdatan(4)
 	  );
-	   flipflop6:FliflopD port map(
-	     data => data(5),
-		  clk => clk,
-		  q => readdata(5),
-		  qnot =>readdatan(5)
-	  );
-	  
 end registro;
